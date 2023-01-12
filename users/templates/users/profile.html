@@ -1,0 +1,48 @@
+{% extends "recipes/base.html" %}
+<!-- -->
+{% load crispy_forms_tags %}
+<!-- -->
+{% block content %}
+
+<style>
+p {
+    font-size: 1rem;
+    margin: 10;
+    white-space: pre-line;
+<!--    height: 10px;-->
+<!--    overflow-wrap: break-word;-->
+<!--    word-break: break-all;-->
+<!--    display: inline-block;-->
+<!--  height: auto;-->
+<!--    font-size:10px;-->
+<!--  width:100%;-->
+<!--  position: relative;-->
+    inline-size: 150px;
+    text-overflow: ellipsis; /* will make [...] at the end */
+    width: 100%; /* change to your preferences */
+    white-space: nowrap; /* paragraph to one line */
+    overflow:hidden; /* older browsers */
+
+}
+
+body{
+background-color: powderblue;
+}
+
+<!--h1   {-->
+<!--color: blue;-->
+<!--}-->
+
+<!--p{-->
+<!--color: red;-->
+<!--}-->
+
+</style>
+
+
+<div class="container">
+  <h1>{{ user.username}}</h1>
+</div>
+
+<!-- -->
+{% endblock content %}
